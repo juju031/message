@@ -12,7 +12,7 @@ class Message
 
         if($url == '')
         {
-            $data['url'] = $url;
+            $data['url'] = $_SERVER["HTTP_REFERER"];
         }else{
             $data['url'] = $url;
         }
