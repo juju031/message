@@ -1,0 +1,22 @@
+{
+    "name": "juju/message",
+    "description": "Yii2 公共信息提示",
+    "type": "yii2-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "juju",
+            "email": "3417919@qq.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "juju\\message\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": ">=2.0.6"
+    }
+}
