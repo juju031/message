@@ -1,24 +1,19 @@
-## 运行信息
+## 公共信息提示
 
 ##安装
 
 ```
-composer require "juju/runinfo:dev-master"
+composer require "juju/message:dev-master"
 
-"juju/runinfo": "~dev-master"
+"juju/message": "~dev-master"
 ```
 
 ##控制器顶部
 ```
-use \juju\runinfo\Runinfo;
+use \juju\message\Message;
 ```
 
 ##控制器调用
 ```
-$runinfo = new Runinfo();
-$runinfo->start();		//开始点，统计内存占用和时间点
-
-$rundata = $runinfo->end();		//结束时间点返回结果数组
-print_r($rundata);
-exit();
+(new Message())->show('标题','正文','跳转URL','时间','视图目录');
 ```

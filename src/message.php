@@ -5,7 +5,7 @@ use Yii;
 
 class Message
 {
-	public function show($title,$content,$url = '',$time = 3,$direct = '')
+	public function show($title,$content,$url = '',$time = 3,$direct = 'site',$file='message.php')
 	{
 		$data['title'] = $title;
         $data['content'] = $content;
@@ -18,7 +18,9 @@ class Message
         }
         $data['time'] = $time;
         
-        echo \Yii::$app->view->renderFile('@app/views/'.$direct.'/message.php',['data' => $data]);
+        echo \Yii::$app->view->renderFile('@app/views/'.$direct.'/'.$file,['data' => $data]);
         exit();
 	}
+
+    public function success()
 }
