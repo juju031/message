@@ -21,6 +21,4 @@ class Message
         echo \Yii::$app->view->renderFile('@app/views/'.$direct.'/'.$file,['data' => $data]);
         exit();
 	}
-
-    public function success()
 }
